@@ -21,9 +21,9 @@ const About = () => {
             Experienced with the latest cutting-edge development tools and procedures. I am proficient in the assortment of technologies, including React JS, Python, JavaScript, Django, and UI libraries like Tailwind CSS, Material UI, and Bootstrap. I have worked with varieties of Relational Databases (RDBMS) like MySQL and NoSQL DBs like Firebase. I am able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. 
             </p>
 
-            <a download='' href={CV} className='button button--flex about__button-level'>Download CV
+            <a download='' href={CV} className='button button--flex'>Download CV
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

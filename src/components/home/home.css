@@ -58,12 +58,6 @@
     top: 1rem;
 }
 
-.button-level {
-    display: flex;
-    flex-direction: row;
-    width: 180px;
-}
-
 .home__img {
     background: url(../../assets/profile.png);
     background-repeat: no-repeat;
@@ -164,12 +158,6 @@
 
     .home__scroll {
         margin-left: 7.5rem;
-    }
-
-    .button-level {
-        display: flex;
-        flex-direction: row;
-        width: 170px;
     }
 }
 

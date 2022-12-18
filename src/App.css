@@ -156,7 +156,7 @@ img {
   margin-left: var(--mb-0-5);
 }
 
-.button__flex {
+.button--flex {
   display: inline-flex;
   align-items: center;
 }
