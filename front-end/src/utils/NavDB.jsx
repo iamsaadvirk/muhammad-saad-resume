@@ -1,4 +1,4 @@
-import { UilEstate, UilUser, UilFileAlt, UilBriefcaseAlt, UilMessage, UilScenery } from '@iconscout/react-unicons'
+import { UilEstate, UilUser, UilFileAlt, UilBriefcaseAlt, UilMessage } from '@iconscout/react-unicons'
 export const menuItems = [
     {   
         "id": 1,
@@ -29,12 +29,6 @@ export const menuItems = [
         "path": "#contact",
         "name": "Contact",
         "icon": <UilMessage className='nav__icon' />
-    },
-    {
-        "id": 6,
-        "path": "/blog",
-        "name": "Blog",
-        "icon": <UilScenery className='nav__icon' />
-    }    
+    }  
 ]
 
