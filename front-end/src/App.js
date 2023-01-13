@@ -1,30 +1,19 @@
 import './App.css';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
-import Qualification from './components/qualification/Qualification';
-import ScrollUp from './components/scrollup/ScrollUp';
-import Skills from './components/skills/Skills';
+import HomeLayout from './components/hoc/HomeLayout';
+import Blog from './components/blog/Blog'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/hoc/Layout';
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-
-        <main className='main'>
-          <Home />
-          <About />
-          <Skills />
-          <Qualification />
-          <Contact />
-          
-        </main>
-
-        <Footer />
-        <ScrollUp />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route exact path='/' element={<HomeLayout />} />
+          <Route path='/blog' element={<Blog />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

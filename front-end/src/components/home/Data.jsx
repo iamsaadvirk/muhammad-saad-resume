@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Data = () => {
   return (
@@ -78,6 +79,7 @@ const Data = () => {
                 ></path>
             </svg>
         </a>
+        <Link to='/blog' className='home__blog'>Visit my blog!</Link>
     </div>
   )
 }

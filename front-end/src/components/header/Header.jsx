@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './header.css'
-import { UilTimes, UilApps, UilEstate, UilUser, UilFileAlt, UilBriefcaseAlt, UilMessage } from '@iconscout/react-unicons'
+import { UilTimes, UilApps } from '@iconscout/react-unicons'
+import { Link, useLocation } from 'react-router-dom'
+import { menuItems } from '../../utils/NavDB'
 
 const Header = () => {
     /* ============ TOGGLE MENU ==============    */
@@ -14,48 +16,34 @@ const Header = () => {
     const [activeNav, setActiveNav] = useState("#home");
     const [toggle, showMenu] = useState(false);
 
+    /* ============ Page Location ============ */
+    const [path, setPath] = useState("/");
+    let location = useLocation();
+    useEffect(() => {
+        setPath(location.pathname);
+    }, [location]);
+
+    console.log(path);
   return (
     <header className="header">
         <nav className="nav container">
-            <a href="index.html" className="nav__logo">Saad Virk</a>
+            <Link to='/' className="nav__logo">Saad Virk</Link>
 
             <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className="nav__list grid">
-                    <li className="nav__item">
-                        <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === '#home' ? "nav__link active-link" : "nav__link"}>
-                            <UilEstate className='nav__icon' /> Home
-                        </a>
-                    </li>
-
-                    <li className="nav__item">
-                        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? "nav__link active-link" : "nav__link"}>
-                            <UilUser className='nav__icon' /> About
-                        </a>
-                    </li>
-
-                    <li className="nav__item">
-                        <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? "nav__link active-link" : "nav__link"}>
-                            <UilFileAlt className='nav__icon' /> Skills
-                        </a>
-                    </li>
-
-                    <li className="nav__item">
-                        <a href="#qualification" onClick={() => setActiveNav('#qualification')} className={activeNav === '#qualification' ? "nav__link active-link" : "nav__link"}>
-                            <UilBriefcaseAlt className='nav__icon' /> Qualification
-                        </a>
-                    </li>
-
-                    {/* <li className="nav__item">
-                        <a href="#portfolio" className="nav__link">
-                            <UilScenery className='nav__icon' /> Portfolio
-                        </a>
-                    </li> */}
-                    
-                    <li className="nav__item">
-                        <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? "nav__link active-link" : "nav__link"}>
-                            <UilMessage className='nav__icon' /> Contact
-                        </a>
-                    </li>
+                    {
+                        path === "/" ? 
+                        menuItems.map((item) => (
+                            <li className='nav__item' key={item.id}>
+                                <a href={item.path} onClick={() => setActiveNav(item.path)} className={activeNav === item.path ? "nav__link active-link" : "nav__link"}>{item.icon} {item.name}</a>
+                            </li>
+                        )) :
+                        menuItems.slice(0,1).concat(menuItems.slice(5,6)).map((item) => (
+                            <li className='nav__item' key={item.id}>
+                                <Link to={item.path} onClick={() => setActiveNav(item.path)} className={activeNav === item.path ? "nav__link active-link" : "nav__link"}>{item.icon} {item.name}</Link>
+                            </li>
+                        ))
+                    }
                 </ul>
                 <UilTimes className='nav__close' onClick={() => showMenu(!toggle)}/>
             </div>
