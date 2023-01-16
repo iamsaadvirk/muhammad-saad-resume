@@ -68,7 +68,7 @@ const Category = () => {
     <section>
       <div className="blog__container container">
         <BlogCategoryNav />
-        <h4>{capitalizeFirstLetter(id)} Category</h4>
+        <h4>{capitalizeFirstLetter(id)} {currentCategory} Category</h4>
 
         {getCategoryBlogs()}
       </div>

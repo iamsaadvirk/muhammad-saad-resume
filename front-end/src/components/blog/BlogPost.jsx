@@ -18,7 +18,6 @@ const BlogPost = ({ blogPost, capitalizeFirstLetter }) => {
       <div className='blogpost__content-text'>
         <strong>{capitalizeFirstLetter(blogPost.category)}</strong>
         <div>
-          {console.log(blogPost.thumbnail.includes(process.env.REACT_APP_API_URL))}
           <img src={blogPost.thumbnail.includes(process.env.REACT_APP_API_URL) ? `${blogPost.thumbnail}` : `${process.env.REACT_APP_API_URL}${blogPost.thumbnail}`} alt={blogPost.title} />
         </div>
         <h4>{blogPost.title}</h4>
