@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e34c077.css",
+    "main.js": "/static/js/main.c491a5fc.js",
+    "static/media/about.png": "/static/media/about.cd24be4de524e1561faa.png",
+    "static/media/profile.jpg": "/static/media/profile.2678c3bc55f934629f2f.jpg",
+    "static/media/Muhammad Saad Virk (Full Stack Developer).pdf": "/static/media/Muhammad Saad Virk (Full Stack Developer).1c7ff75d855299c45eb9.pdf",
+    "index.html": "/index.html",
+    "main.6e34c077.css.map": "/static/css/main.6e34c077.css.map",
+    "main.c491a5fc.js.map": "/static/js/main.c491a5fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e34c077.css",
+    "static/js/main.c491a5fc.js"
+  ]
+}

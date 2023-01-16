@@ -1,3 +1,128 @@
 .blog__container{
     margin-top: 5rem;
 }
+
+.nav__container {
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.nav__container a{
+    padding: 1rem;
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+.blog__featured-section {
+    margin-top: 1rem;
+    background-color: var(--title-color);
+    border-radius: 0.25rem;
+}
+
+.blog__featured-content {
+    padding: 2rem;
+    width: 75%;
+}
+
+.blog__featured-content h1  {
+    color: #fff;
+}
+
+.blog__featured-content h3  {
+    color: #fff;
+}
+
+.blog__featured-content p {
+    color: #fff;
+}
+
+.blog__featured-content a {
+    color: #fff;
+    font-weight: var(--font-medium);
+}
+
+.blog__featured-content h1 {
+    font-size: var(--h2-font-size);
+}
+
+.blog__featured-content h3 {
+    text-decoration: underline;
+}
+
+.blogpost__sections {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blogpost__sections:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blogpost__column {
+    float: left;
+    width: 33.33%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.blogpost__content-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    height: 27rem;
+    text-align: left;
+    background-color: var(--container-color);
+}
+
+.blogpost__content-text strong {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.blogpost__content-text h4{
+    color: var(--title-color-dark);
+    font-size: var(--h3-font-size);
+}
+
+.blogpost__content-text span{
+    color: var(--title-color-dark);
+    font-size: var(--smaller-font-size);
+}
+
+.blogpost__content-text p{
+    color: var(--title-color-dark);
+    font-size: var(--smaller-font-size);
+}
+
+.blogpost__content-text a{
+    color: var(--title-color-dark);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+}
+
+.blogpost h1{
+    font-size: var(--h1-font-size);
+}
+
+.blogpost img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blogpost p{
+    text-align: justify;
+    color: var(--title-color);
+}
+
+
+.blogpost hr{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blogpost a{
+    font-weight: var(--font-medium);
+}

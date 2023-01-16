@@ -22,7 +22,7 @@ const Footer = () => {
                 </a>
 
                 <a href="https://www.facebook.com/msaadvirk12" className="footer__social-link" rel='noreferrer' target="_blank">
-                    <i class='bx bxl-facebook'></i>
+                    <i className='bx bxl-facebook'></i>
                 </a>
             </div>
 

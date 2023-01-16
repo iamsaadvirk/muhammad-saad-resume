@@ -55,7 +55,6 @@ const Data = () => {
                 ></path>
             </svg>
         </h1>
-        <h3 className="home__subtitle">Full Stack Developer</h3>
         <p className="home__description">
             Experienced Full-Stack Developer with a Passion for Building Robust Web Applications 
         </p>
@@ -79,7 +78,8 @@ const Data = () => {
                 ></path>
             </svg>
         </a>
-        <Link to='/blog' className='home__blog'>Visit my blog!</Link>
+        <h4 className='blog__line'>Want to Elevate Your Web Development Concepts?</h4>
+        <Link to='/blog' className='home__blog home__subtitle'>Checkout My Blog!</Link>
     </div>
   )
 }

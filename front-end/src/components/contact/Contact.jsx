@@ -22,12 +22,12 @@ const Contact = () => {
 
                 <div className="contact__info">
                     <div className="contact__card">
-                    <i class='bx bx-mail-send contact__card-icon'></i>
+                    <i className='bx bx-mail-send contact__card-icon'></i>
 
                         <h3 className="contact__card-title">Email:</h3>
                         <span className="contact__card-data">m.saad.virk.12@gmail.com </span>
 
-                        <a href="mailto:m.saad.virk.12@gmail.com" className='contact__button'>Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        <a href="mailto:m.saad.virk.12@gmail.com" className='contact__button'>Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div>
 
                     <div className="contact__card">
@@ -36,7 +36,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">WhatsApp:</h3>
                         <span className="contact__card-data">(+92) 312-434-4746 </span>
 
-                        <a href="https://wa.me/message/DI45FAP3XX2YD1" className='contact__button'>Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        <a href="https://wa.me/message/DI45FAP3XX2YD1" className='contact__button'>Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div>
 
                     {/* <div className="contact__card">
@@ -45,7 +45,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">Messenger</h3>
                         <span className="contact__card-data">@msaadvirk12 </span>
 
-                        <a href="https://m.me/msaadvirk12" className='contact__button'>Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        <a href="https://m.me/msaadvirk12" className='contact__button'>Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div> */}
 
                     <div className="contact__card">
@@ -54,7 +54,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">Skype</h3>
                         <span className="contact__card-data">@(+923124344746) </span>
 
-                        <a href="https://join.skype.com/invite/um2srt5GuKOW" className='contact__button'>Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        <a href="https://join.skype.com/invite/um2srt5GuKOW" className='contact__button'>Write me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ class Categories(models.TextChoices):
     ARCHITECTURE = 'architectcture'
 
 class BlogPost(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=150)
     slug = models.SlugField()
     category = models.CharField(max_length=50, choices=Categories.choices, default=Categories.REACTJS)
     thumbnail = models.ImageField(upload_to='img/%Y/%m/%d')
@@ -41,9 +41,9 @@ class BlogPost(models.Model):
                     temp.save()
             except:
                 pass
-            
-            super(BlogPost, self).save(*args, **kwargs)
+        super(BlogPost, self).save(*args, **kwargs)
 
-        def __str__(self):
-            return self.title
+
+    def __str__(self):
+        return self.title
 
